@@ -14,21 +14,48 @@ This makes it simple to run and manage different BloodHound environments indepen
 
 ## How It Works
 
-The repository includes two configuration files:
+This repository includes two configuration files:
 
 - `docker-compose.yml`
 - `env`
 
 The `docker-compose.yml` file should not be modified unless you want to make specific changes to the deployment configuration.
 
-The `env` file contains the environment variables required to customize the deployment. In this repository, it is uploaded without the hidden-file format so it can be safely included in GitHub.
+The `env` file contains the environment variables required by the Docker deployment. In this repository, it is uploaded without the hidden file prefix so it can be stored properly in GitHub.
 
-Before using it, rename the file from:
+Before using it, you must rename:
 
-```text
+```bash
 env
 ```
-To:
-```text
+
+to:
+
+```bash
 .env
 ```
+
+## Requirements
+
+To run this project on a Windows system, you need to install **Docker Desktop**.
+
+## Deployment Commands
+
+Once Docker Desktop is installed and running, use the following commands from the folder where the project files are located:
+
+```bash
+docker compose down -v
+docker system prune -a --volumes -f
+docker compose pull
+docker compose --env-file .\.env -p Project_Name up -d
+```
+
+The last command will start the Docker environment using the variables defined in the `.env` file.
+
+Replace:
+
+```bash
+Project_Name
+```
+
+with the name you want to assign to the Docker project.
