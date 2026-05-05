@@ -64,6 +64,10 @@ From **PowerShell**, you can run:
 Rename-Item env .env
 ```
 
+<img width="456" height="144" alt="image" src="https://github.com/user-attachments/assets/30821850-384a-4fa2-8d7b-beaf24e689f1" />
+
+**Change all variables** and use strong passwords.
+
 ---
 
 ### Step 3: Install Docker Desktop
@@ -117,5 +121,67 @@ docker compose --env-file .\.env -p bloodhound-lab01 up -d
 ```
 
 This command will start the Docker environment using the variables defined in the `.env` file.
+
+---
+
+### Step 6: Retrieve the Initial BloodHound Password
+
+Once the Docker environment has been started, Docker Compose will create the required network, volumes, and containers.
+
+You should see an output similar to this:
+
+```powershell
+docker compose --env-file .\.env -p bh_lab1 up -d
+```
+<img width="1711" height="229" alt="image" src="https://github.com/user-attachments/assets/1b0c57a8-07fb-422b-addc-aff895d8cfa4" />
+
+
+After that, open **Docker Desktop** and go to:
+
+```text
+Containers
+```
+
+Select the BloodHound container. Its name will follow the project name you used in the Docker Compose command.
+
+For example, if you used:
+
+```powershell
+docker compose --env-file .\.env -p bh_lab1 up -d
+```
+
+the BloodHound container will be named similar to:
+
+```text
+bh_lab1-bloodhound-1
+```
+
+Open the container and go to the **Logs** tab.
+
+Inside the logs, look for the following line:
+
+```text
+Initial Password Set To:
+```
+
+<img width="2526" height="1191" alt="image" src="https://github.com/user-attachments/assets/7cafbb53-efc9-4479-8dbb-dd10ec931f51" />
+
+
+The value shown after that line is the randomly generated initial password for the BloodHound instance.
+
+Use this password to perform the first login into BloodHound.
+
+The BloodHound web interface will be available through the port configured in your `.env` file.
+
+For example:
+
+```text
+http://localhost:<BLOODHOUND_PORT>
+```
+
+
+
+
+
 
 
