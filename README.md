@@ -44,13 +44,8 @@ To run this project on a Windows system, you need to install **Docker Desktop**.
 Once Docker Desktop is installed and running, use the following commands from the folder where the project files are located:
 
 ```bash
-docker compose down -v
-docker system prune -a --volumes -f
-docker compose pull
 docker compose --env-file .\.env -p Project_Name up -d
 ```
-
-The last command will start the Docker environment using the variables defined in the `.env` file.
 
 Replace:
 
