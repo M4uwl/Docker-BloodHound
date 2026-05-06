@@ -16,11 +16,11 @@ This makes it simple to run and manage different BloodHound environments indepen
 This repository includes two configuration files:
 
 - `docker-compose.yml`
-- `env`
+- `.env.example`
 
 The `docker-compose.yml` file should not be modified unless you want to make specific changes to the deployment configuration.
 
-The `env` file contains the environment variables required by the Docker deployment. In this repository, it is uploaded without the hidden file prefix so it can be stored properly in GitHub.
+The `.env.example` file contains the environment variables required by the Docker deployment. In this repository, it is uploaded without the hidden file prefix so it can be stored properly in GitHub.
 
 Before using it, you must rename:
 
