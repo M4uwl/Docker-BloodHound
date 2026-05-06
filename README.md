@@ -65,13 +65,7 @@ Rename-Item env .env
 ```
 
 <p align="center">
-  <table>
-    <tr>
-      <td bgcolor="#c084fc" cellpadding="8">
-        <img width="456" height="144" alt="image" src="https://github.com/user-attachments/assets/30821850-384a-4fa2-8d7b-beaf24e689f1" />
-      </td>
-    </tr>
-  </table>
+  <img width="456" height="144" alt="image" src="https://github.com/user-attachments/assets/30821850-384a-4fa2-8d7b-beaf24e689f1" />
 </p>
 
 **Change all variables** and use strong passwords.
@@ -141,8 +135,9 @@ You should see an output similar to this:
 ```powershell
 docker compose --env-file .\.env -p bh_lab1 up -d
 ```
-<img width="1711" height="229" alt="image" src="https://github.com/user-attachments/assets/1b0c57a8-07fb-422b-addc-aff895d8cfa4" />
-
+<p align="center">
+  <img width="1711" height="229" alt="image" src="https://github.com/user-attachments/assets/1b0c57a8-07fb-422b-addc-aff895d8cfa4" />
+</p>
 
 After that, open **Docker Desktop** and go to:
 
@@ -171,9 +166,9 @@ Inside the logs, look for the following line:
 ```text
 Initial Password Set To:
 ```
-
-<img width="2526" height="1191" alt="image" src="https://github.com/user-attachments/assets/7cafbb53-efc9-4479-8dbb-dd10ec931f51" />
-
+<p align="center">
+  <img width="2526" height="1191" alt="image" src="https://github.com/user-attachments/assets/7cafbb53-efc9-4479-8dbb-dd10ec931f51" />
+</p>
 
 The value shown after that line is the randomly generated initial password for the BloodHound instance.
 
