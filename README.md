@@ -65,13 +65,13 @@ Rename-Item env .env
 ```
 
 <p align="center">
-  <img
-    width="456"
-    height="144"
-    alt="image"
-    src="https://github.com/user-attachments/assets/30821850-384a-4fa2-8d7b-beaf24e689f1"
-    style="border: 3px solid #c084fc; border-radius: 12px; padding: 8px;"
-  />
+  <table>
+    <tr>
+      <td bgcolor="#c084fc" cellpadding="8">
+        <img width="456" height="144" alt="image" src="https://github.com/user-attachments/assets/30821850-384a-4fa2-8d7b-beaf24e689f1" />
+      </td>
+    </tr>
+  </table>
 </p>
 
 **Change all variables** and use strong passwords.
