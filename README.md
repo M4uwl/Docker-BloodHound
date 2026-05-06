@@ -25,7 +25,7 @@ The `env` file contains the environment variables required by the Docker deploym
 Before using it, you must rename:
 
 ```bash
-env
+.env.example
 ```
 
 to:
